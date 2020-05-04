@@ -3,6 +3,10 @@ a {
 	color: black;
 }
 
+mark {
+	background-color: gold;
+}
+
 #main #name {
 	position: absolute;
 	left: 20vw;
@@ -28,7 +32,7 @@ a {
 	margin: 20px;
 	height: 365px;
 	width: 450px;
-	background-color: yellow;
+	background-color: rgb(255,215,0);
 	opacity: 0.1;
 }
 
@@ -62,7 +66,7 @@ a {
 }
 
 #main #menu .element:hover {
-	opacity: 0.7;
+	opacity: 1;
 	cursor: pointer;
 }
 
@@ -90,7 +94,7 @@ canvas {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #e3e3e3;
+    background-color: rgba(225,215,0,0.5);
 }
 
 ::-webkit-scrollbar-button:vertical:start:decrement {

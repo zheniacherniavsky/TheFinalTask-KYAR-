@@ -7,11 +7,10 @@
 	left: 11vw;
 	max-height: 77vh;
 	top: 15vh;
-	background: rgba(255, 255, 0, 0.5);
 }
 
 .chapter hr {
-	border-color: black;
+	border-color: white;
 	margin-bottom: 0;
 }
 
@@ -19,23 +18,22 @@
 	padding-left: 20px;
 }
 
-.chapter p {
-	border-top: 2px solid black;
-	border-bottom: 2px solid black;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-top: 0;
-	margin-bottom: 0;
-
-	font-size: 20px;
+.chapter h1 {
+	color: white;
 }
 
-.chapter .back {
-	border-bottom: 4px solid black;
+.chapter p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-size: 20px;
+	background: gold;
 }
 
 .chapter p:hover {
+	background: none;
+	color: white;
 	font-weight: bold;
-	color: yellow;
 	cursor: pointer;
 }
