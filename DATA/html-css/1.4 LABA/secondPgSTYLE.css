@@ -1,0 +1,14 @@
+#adress {
+	border: 5px solid orange;
+	margin-left: -200px;
+	margin-right: 200px;
+	padding-left: 250px;
+}
+#cat {
+	margin-left: 20%; 
+	font-family: Arial; 
+	background-color: lightyellow; 
+	background-position: right top; 
+	background-size: 20%; 
+	background-repeat: no-repeat;
+}

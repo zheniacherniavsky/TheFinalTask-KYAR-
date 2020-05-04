@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab1</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body {
+			background-color: #090909;
+		}
+		#html5 {
+			color: yellow;
+			font-weight: bold;
+		}
+		#player {
+			width: 780px;
+			margin-left: 28%;
+			/*border: 3px solid yellow;*/
+			padding: 10px;
+		}
+		#player img {
+			border-radius: 10px;
+		}
+		.song {
+			margin-bottom: 20px;
+		}
+		hr {
+			margin: 40px;
+		}
+		h1, h3 {
+			font-family: Montserrat;
+			text-align: center;
+			color: #e3e3e3;
+		}
+
+		video {
+			margin-left: 28%;
+			border: 3px solid yellow;
+		}
+		audio::-webkit-media-controls-panel {
+			background-color: yellow;
+		}
+
+		.audio .songName{
+			position: relative;
+			width: 300px;
+			float: left;
+		}
+		.audio {
+			float: right;
+		}
+		.audio audio {
+			margin-top: 7%;
+			margin-right: 10px;
+		}
+		
+		::-webkit-scrollbar {
+		    width: 15px; 
+		    height: 8px; 
+		    background-color: black;
+		}
+
+		::-webkit-scrollbar-thumb {
+		    background-color: yellow;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+		    background-color: #e3e3e3;
+		}
+
+		::-webkit-scrollbar-button:vertical:start:decrement {
+		    background: linear-gradient(120deg, black 40%, rgba(0, 0, 0, 0) 41%),
+		    linear-gradient(240deg, black 40%, rgba(0, 0, 0, 0) 41%),
+		    linear-gradient(0deg, black 30%, rgba(0, 0, 0, 0) 31%);
+		    background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>Я, <mark>Чернявский Евгений Александрович</mark>, изучаю <span id="html5">HTML5</span></h1>
+	<video src="particles.mp4" width="800px" controls="controls" autoplay="autoplay"></video>
+	<h1>Моя музыка</h1>
+	<div id="player">
+		<div class="song">
+			<hr noshade>
+			<img src="JojiRun.jpg">
+			<div class="audio">
+				<div class="songName">
+					<h1>Run</h1>
+					<h3>Joji</h3>
+				</div>
+				<audio src="JojiRun.mp3" controls="controls"></audio>	
+			</div>
+		</div>
+		<div class="song">
+			<hr noshade>
+			<img src="TheWeekndHardestToLove.jpg">
+			<div class="audio">
+				<div class="songName">
+					<h1>Hardest To Love</h1>
+					<h3>TheWeeknd</h3>
+				</div>
+				<audio src="TheWeekndHardestToLove.mp3" controls="controls"></audio>	
+			</div>
+		</div>
+		<div class="song">
+			<hr noshade>
+			<img src="SickoMode.jpg">
+			<div class="audio">
+				<div class="songName">
+					<h1>SICKO MODE</h1>
+					<h3>Travis Scott</h3>
+				</div>
+				<audio src="SickoMode.mp3" controls="controls"></audio>	
+			</div>
+		</div>
+		<div class="song">
+			<hr noshade>
+			<img src="HighestInTheRoom.jpg">
+			<div class="audio">
+				<div class="songName">
+					<h1>HIGHEST IN THE ROOM</h1>
+					<h3>Travis Scott</h3>
+				</div>
+				<audio src="HighestInTheRoom.mp3" controls="controls"></audio>	
+			</div>
+		</div>
+		<hr noshade>
+	</div>
+</body>
+</html>

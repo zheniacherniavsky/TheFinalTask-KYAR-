@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>11 lab second part</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<style type="text/css">
+		img {
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<img id="moveright" src="img1.jpg" width="300px">
+	<img id="movesin" src="img1.jpg" width="300px">
+	<a href="graf.html">График</a>
+	<script type="text/javascript">
+		$( "#moveright" ).click(function() {
+		  $(this).animate({
+		    marginLeft: "400px"
+		  }, 1500 );
+		});
+
+		$("#movesin").css("top","300px");
+
+		$("#movesin").click(function() {
+			$(this).animate({
+				marginLeft: "200px",
+				top: "500px"
+			}, 1500);
+			$(this).animate({
+				marginLeft: "400px",
+				top: "300px"
+			}, 1500);
+			$(this).animate({
+				marginLeft: "600px",
+				top: "1000px",
+				display: "none"
+			}, 1500);
+		});
+	</script>
+</body>
+</html>

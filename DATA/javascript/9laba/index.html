@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>9 lab</title>
+	<style type="text/css">
+		.menu-item {
+			margin: 20px;
+			text-align: center;
+			transition: 1s;
+			border: 2px soild #66CDAA;
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+		}
+		.menu-item .submenu {
+			transition: 1s;
+			border-radius: 5px;
+			display: none;
+			height: 20px;
+			width: 120;
+			background: lightgreen;
+			position: absolute;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<img id="img" src="img1.jpg" width="300px"><br>
+
+	<script type="text/javascript" src="script.js">
+		// second
+		function second() { // ДОБАВИТЬ АНИМАЦИИ С ПОМОЩЬЮ jQuery
+			document.write('<img id="img1" src="img1.jpg" width="300px"><br>');
+			let img1 = document.getElementById("img1");
+
+			img1.style.position = 'absolute';
+
+			var x = 0;
+
+			function moveOnLine() {
+				if(x > 300) clearInterval(interval);
+				x++;
+				img1.style.left = x + 'px';
+			}
+
+			let interval = setInterval(moveOnLine,20);
+		}
+
+		// third
+		function third() {
+			document.write('<img id="img2" src="img1.jpg" width="300px"><br>');
+			let img2 = document.getElementById("img2");
+
+			img2.style.position = 'absolute';
+			let top = 200;
+
+			img2.style.top = top + 'px';
+
+			let x = 0;
+			let y = 0;
+
+			function changeMove() {
+				if(x < 0) clearInterval(interval);
+				x -= 0.1;
+				img2.style.left = x + 'px';
+				y = top + Math.sin(x)*100;
+				img2.style.top = y + 'px';
+			}
+
+			function moveOnLine() {
+				if(x > 100) {
+					clearInterval(interval);
+					interval = setInterval(changeMove, 10);
+				}
+				x += 0.1;
+				img2.style.left = x + 'px';
+				y = top + Math.sin(x)*200;
+				img2.style.top = y + 'px';
+			}
+
+			let interval = setInterval(moveOnLine,10);
+		}
+
+
+		// fourth
+
+		document.getElementById('nav').onmouseover = function(event){
+		//отслеживает нахождение мыши внутри блока
+			var target = event.target;
+		//отслеживаем клик
+			if (target.className == 'menu-item'){
+				var s = target.getElementsByClassName('submenu');
+				closeMenu();
+				s[0].style.display='block';
+				//массив, содержащий ложное меню
+			}
+		}
+
+		document.onmouseover=function(event){
+			var target = event.target;
+			console.log(event.target);
+			if (target.className!='menu-item' &&
+			target.className!='submenu'){
+				closeMenu();
+			}
+		}
+
+		function closeMenu(){
+			//получение всех элементов подменю в блоке nav, присваивание
+			var menu = document.getElementById('nav');
+			var subm=document.getElementsByClassName('submenu');
+			for (var i=0; i <subm.length; i++){
+				subm[i].style.transition ="1s";
+				subm[i].style.display ="none";
+			}
+		}
+	</script>
+</body>
+</html>

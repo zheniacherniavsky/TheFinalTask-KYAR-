@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>11 lab</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		let count = false;
+		$("#slideshow").attr("src","img1.jpg");
+	    $("#slideshow").click(function(){
+	        if(!count) {
+				$(this).attr("src","img2.jpg");
+				count = true;
+			}
+			else if(count) {
+				$(this).attr("src","img1.jpg");
+				count = false;
+			}
+	    });
+		(function() {
+			$("#drag").draggable();
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="hover">Hover</p>
+	<p id="click">Click</p>
+	<img id="slideshow" width="300px">
+	<p id="change">picture</p>
+	<img id="overout" src="img1.jpg" width="300px">
+	<p id="dbclick">Double click</p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

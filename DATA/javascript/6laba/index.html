@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>6 lab work JS</title>
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+		h1 {
+			font-family: Arial;
+			margin-left: 40px;
+		}
+		input,select {
+			margin-left: 20px;
+			border: 1px solid grey;
+			padding: 10px;
+			border-radius: 20px;
+			outline: none;
+		}
+		select {
+			border-radius: 20px 20px 0 0;
+		}
+		input:hover {
+			box-shadow: 2px 2px 2px lightgrey;
+			cursor: pointer;
+		}
+		input:active {
+			border: 1px solid black;
+		}
+		table {
+			margin: 20px 0 0 20px;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	<h1>firstTask</h1>
+	<input type="text" id="firstTaskSelect" placeholder="Введите имя файла">
+	<input type="text" id="text" placeholder="Введите ваш текст">
+	<input type="button" onclick="firsttask_select()" value="Открыть страницу">
+	<input type="button" onclick="firsttask_close()" value="Закрыть страницу">
+	<input type="button" onclick="firsttask_change()" value="Изменить текст">
+	<h1>secondTask</h1>
+	<table border="1px black" cellpadding="5px">
+		<tr>
+			<td><b>свойство</b></td>
+			<td><b>значение</b></td>
+		</tr>
+		<tr>
+			<td>userAgent</td>
+			<td id="value1"></td>
+		</tr>
+		<tr>
+			<td>appVersion</td>
+			<td id="value2"></td>
+		</tr>
+		<tr>
+			<td>appName</td>
+			<td id="value3"></td>
+		</tr>
+		<tr>
+			<td>appCodeName</td>
+			<td id="value4"></td>
+		</tr>
+		<tr>
+			<td>platform</td>
+			<td id="value5"></td>
+		</tr>
+		<tr>
+			<td>javaEnabled()</td>
+			<td id="value6"></td>
+		</tr>
+		<tr>
+			<td>width height</td>
+			<td id="value7"></td>
+		</tr>
+		<tr>
+			<td>colorDepth</td>
+			<td id="value8"></td>
+		</tr>
+		<tr>
+			<td>History</td>
+			<td id="value9"></td>
+		</tr>
+		<tr>
+			<td>href</td>
+			<td id="value10"></td>
+		</tr>
+		<tr>
+			<td>pathnam</td>
+			<td id="value11"></td>
+		</tr>
+		<tr>
+			<td>host</td>
+			<td id="value12"></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>7 LAB</title>
+</head>
+<body>
+	<svg width="300px" height="150px">
+		<rect width="150px" height="150px" fill="#009900">
+		<animate attributeName="x" from="0px" to="150px" dur="3s" begin="mousedown" fill="freeze">
+	</svg>
+	<br>
+	<svg width="300px" height="300px">
+		<circle r="50px" cx="150px" cy="150px" fill="#990000">
+		<animate attributeName="r" from="50px" to="150px" dur="1s" begin="mousedown" fill="freeze">
+	</svg>
+	<br>
+	<svg width="700px" height="300px">
+		<rect width="300px" height="300px" fill="red">
+		<animate attributeName="fill" from="red" to="blue" dur="3s" begin="mousedown" repeatCount="indefinite" />
+		<animate attributeName="fill" from="blue" to="red" dur="3s" begin="3s" repeatCount="indefinite" />
+		<animate attributeName="x" from="0px" to="400px" dur="3s" begin="mousedown">
+	</svg>
+	<br><br><br><br>
+	<svg width="150px" height="150px">
+		<rect width="150px" height="150px" fill="#009900" stroke="black" stroke-width="1" stroke-dasharray= "60" stroke-dashoffset ="150">
+		<animate attributeName="stroke-width" from="1" to="40" dur="2s" begin="mousedown" fill="freeze">
+		<animate attributeName="stroke-dashoffset" from="0" to="500" dur="2s" begin="2s">
+	</svg>
+	<br><br><br><br>
+	<svg width="400" height = "300" xmlns="http://www.w3.org/2000/svg">
+		<g id="flag">
+			<rect fill="white" stroke="black" stroke-width="2" height="300" width="400" y="0" x="0"/>
+			<circle fill="red" r="80" cx="200" cy="150"/>
+			<animateTransform xlink:href="#flag" attributeName="transform" attributeType="XML" type="scale" from="1" to="0.5" dur="5s" additive="sum" fill="freeze" begin="mousedown">
+		</g>
+	</svg>
+	<br><br><br><br>
+	<svg width="150px" height="150px">
+		<rect width="150px" height="150px" fill="#009900" stroke="black" stroke-width="50" stroke-dasharray= "60" stroke-dashoffset ="150">
+		<animate attributeName="stroke-dashoffset" from="0" to="500" dur="2s" begin="mousedown">
+	</svg>
+	<br><br><br><br>
+	<svg width="600" height="600" id="crowns" viewBox="0 0 400 400">
+		<rect fill="yellow" width="100%" height="100%"/>
+		<defs>
+			<path id="crown" d="M 10,110 L 10,10 L 40,50 L 70,10 L 100,50 L 130,10 L 130,110 z"/>
+		</defs>
+		<use xlink:href="#crown" class="col-1" x = "200" transform="rotate(36 0 0)"/>
+		<use xlink:href="#crown" class="col-2" x = "400" y = "50" transform="rotate(12 28 39), scale(0.7)"/>
+		<use xlink:href="#crown" class="col-3" x = "360" y = "600" transform="rotate(26 28 39), scale(0.4)"/>
+	</svg>
+	<br><br><br><br>
+	<svg width="30px" height="30px">
+		<rect width="30px" height="30px" fill="yellow" stroke="black" stroke-width="10" stroke-linejoin="round" stroke-dasharray= "30" stroke-dashoffset ="0">
+		<animate attributeName="stroke-dashoffset" from="0" to="120" dur="1s" begin="0s" repeatCount="indefinite">
+	</svg>
+
+</body>
+</html>

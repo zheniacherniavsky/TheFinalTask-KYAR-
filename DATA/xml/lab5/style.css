@@ -1,0 +1,24 @@
+SPECIALITY {
+	width: 300px;
+	display: block;
+	margin: 0px 20px 10px 500px;
+	border: 1px solid black;
+	font-size: 20px;
+}
+UNIVER {
+	display: block;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+}
+BALL {
+	display: block;
+	border-bottom: 1px solid black;
+}
+PEOPLE {
+	display: block;
+	border-bottom: 1px solid black;
+}
+CITY {
+	font-style: italic;
+	display: block;
+}

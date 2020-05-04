@@ -1,0 +1,41 @@
+.tab {
+	margin-left: 30px;	
+}
+#abzac1 {
+	font-size: 20px;
+	color: lightgreen;
+	font-family: Tahoma;
+	word-spacing: 50px;
+}
+#span1abzac {
+	color: green; /* не будет работать, так как есть строковое подключение. Оно приоритетней*/
+}
+#abzac2 {
+	font-size: 25px;
+	color: lightblue;
+	font-family: Arial;
+	text-decoration: bold;
+	font-style: oblique;
+}
+#span2abzac {
+	color: black;
+}
+#abzac3 {
+	font-size: 30px;
+	color: purple;
+	font-family: Arial;
+	letter-spacing: 5px;
+}
+#span3abzac {
+	color: cyan;
+	text-decoration: bold;
+	font-style: italic;
+}
+body {
+	margin-left: 30px;
+	background-color: lightyellow;
+}
+h1, h2, h3 {
+	font-family: Arial;
+	color: darkgreen;
+}

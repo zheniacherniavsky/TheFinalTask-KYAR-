@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xslt"?>
+<LIST>
+	<FRIEND>
+		<FIRSTNAME>Евгений</FIRSTNAME>
+		<LASTNAME>Чернявский</LASTNAME>
+		<FATHERNAME>Александрович</FATHERNAME>
+		<BALL>3</BALL>
+		<BIRTHDAY>2008</BIRTHDAY>
+	</FRIEND>
+	<FRIEND>
+		<FIRSTNAME>Андрей</FIRSTNAME>
+		<LASTNAME>Андреевич</LASTNAME>
+		<FATHERNAME>Александрович</FATHERNAME>
+		<BALL>10</BALL>
+		<BIRTHDAY>2012</BIRTHDAY>
+	</FRIEND>
+	<FRIEND>
+		<FIRSTNAME>Владимир</FIRSTNAME>
+		<LASTNAME>Станкевич</LASTNAME>
+		<FATHERNAME>Александрович</FATHERNAME>
+		<BALL>6</BALL>
+		<BIRTHDAY>2001</BIRTHDAY>
+	</FRIEND>
+	<FRIEND>
+		<FIRSTNAME>Денис</FIRSTNAME>
+		<LASTNAME>Акулов</LASTNAME>
+		<FATHERNAME>Александрович</FATHERNAME>
+		<BALL>6</BALL>
+		<BIRTHDAY>2005</BIRTHDAY>
+	</FRIEND>
+	<FRIEND>
+		<FIRSTNAME>Виктория</FIRSTNAME>
+		<LASTNAME>Новик</LASTNAME>
+		<FATHERNAME>Александровна</FATHERNAME>
+		<BALL>5</BALL>
+		<BIRTHDAY>2002</BIRTHDAY>
+	</FRIEND>
+	</LIST>

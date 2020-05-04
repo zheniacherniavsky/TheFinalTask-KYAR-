@@ -1,0 +1,40 @@
+#navbar ul{
+	display: none;
+	background-color: green;
+	position: absolute;
+	top: 100%; 
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#navbar {
+	display: flex;
+	position: fixed;
+	height: 30px;
+	background-color: green;
+	padding-left: 0px;
+	min-width: 300px;
+}
+#navbar li {
+	float: left;
+	position: relative;
+	height: 100%;
+}
+#navbar li a {
+	font-family: Arial;
+	display: block;
+	padding: 6px;
+	width: 100px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+#navbar li a:hover {
+	font-weight: bold
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: lightgrey; transition: all 0.3s ease}
+#navbar ul li:hover { background-color: lightgrey; transition: all 0.3s ease}

@@ -1,0 +1,6 @@
+<svg width="1000" height = "1000" xmlns="http://www.w3.org/2000/svg">
+<g id="flag">
+	<rect fill="white" stroke="black" stroke-width="2" height="300" width="400" y="0" x="0"/>
+	<circle fill="red" r="80" cx="200" cy="150"/>
+</g>
+</svg>

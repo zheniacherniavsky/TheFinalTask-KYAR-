@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="FACULTY">
+	<xs:complexType>
+		<xs:element name="SPECIALITY">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="UNIVER" type="xs:string"/>
+					<xs:element name="BALL" type="xs:string"/>
+					<xs:element name="PEOPLE" type="xs:integer"/>
+					<xs:element name="CITY" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

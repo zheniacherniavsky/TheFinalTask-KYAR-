@@ -1,0 +1,71 @@
+.names {
+	font-size: 18px;
+	color: purple;
+	font-family: Arial;
+	letter-spacing: 5px;
+}
+
+.names1 {
+	font-size: 18px;
+	color: gold;
+	font-family: Arial;
+	text-decoration: bold;
+	text-shadow: 2px 2px 2px grey;
+}
+
+#myname {
+	font-size: 50px;
+	font-family: Arial;
+	color: purple;
+	text-decoration: none;
+}
+#myname:visited {
+	font-size: 50px;
+	font-family: Arial;
+	color: blue;
+	text-decoration: none;
+}
+#myname:hover {
+	font-size: 50px;
+	font-family: Arial;
+	color: green;
+	text-shadow: 7px 7px 7px yellow;
+	text-decoration: none;
+}
+#yellow {
+	background-color: yellow;
+}
+#orange {
+	background-color: orange;
+}
+#lightblue {
+	background-color: lightblue;
+}
+.adress {
+	font-family: Arial;
+	font-size: 40px;
+	color: gold;
+	text-shadow: 5px 5px 5px darkred;
+}
+.adress:first-letter {
+	font-family: Arial;
+	font-size: 80px;
+	color: White;
+	text-shadow: 5px 5px 5px darkred;
+	border: gold solid 2px;
+	border-width: 2px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px black;
+	padding: 15px;
+}
+.adress:first-letter {
+	font-family: Arial;
+	font-size: 80px;
+	color: White;
+	text-shadow: 5px 5px 5px darkred;
+	border: gold solid 2px;
+	border-width: 2px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px black;
+	padding: 25px;
+}

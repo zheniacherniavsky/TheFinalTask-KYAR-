@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>7 lab work JS</title>
+	<script type="text/javascript" src="script.js"></script>
+	<style type="text/css">
+		form {
+			width: 500px;
+			margin: 0 auto;
+		}
+		textarea {
+			font-weight: bold;
+			width: 344px;
+			height: 100px;
+		}
+		select {
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Второе задание</legend>
+			<textarea>Факультет Информационнах технологий</textarea></br>
+			<input type="text" name="firstname" id="firstname" placeholder="Имя">
+			<input type="text" name="lastname" id="lastname" placeholder="Фамилия">
+			<p>Специальность: </p><select>
+				<option>ПОИТ</option>
+				<option>ИСиТ</option>
+				<option>ПОИБмС</option>
+				<option>ДЭВИ</option>
+			</select>
+			<p>Курс:</p>
+			<input type="radio" name="course" value="1"> 1
+			<input type="radio" name="course" value="2"> 2
+			<input type="radio" name="course" value="3"> 3
+			<input type="radio" name="course" value="4"> 4
+			<p>Предметы:</p>
+			<input type="checkbox" name="subjects" value="ОАиП"> ОАиП
+			<input type="checkbox" name="subjects" value="ОИТ"> ОИТ
+			<input type="checkbox" name="subjects" value="История"> История
+			<input type="checkbox" name="subjects" value="Математика"> Математика
+			<input type="checkbox" name="subjects" value="Физика"> Физика<br><br>
+			<input type="submit" name="submit" value="submit">
+			<input type="reset" name="reset" value="reset"><br><br>
+			<input type="button" name="print" id="print" value="Напечатать" onclick="printForm()">
+			<input type="button" name="print" id="print" value="Заполнить список" onclick="edit()">
+		</fieldset>
+	</form><hr>
+	<form>
+		<fieldset>
+			<legend>Список</legend>
+			<select>
+				<option name="subj"></option>
+				<option name="subj"></option>
+				<option name="subj"></option>
+				<option name="subj"></option>
+				<option name="subj"></option>
+			</select>
+			<input type="button" onclick="resetSub()" value="reset"><br>
+		</fieldset>
+	</form>
+</body>
+</html>

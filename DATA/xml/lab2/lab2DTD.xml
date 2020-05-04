@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE FACULTY SYSTEM "Faculty.dtd">
+<?xml-stylesheet type="text/css" href="style.css"?>
+<FACULTY>
+	<SPECIALITY>
+		<UNIVER>БГТУ</UNIVER>
+		<BALL>Проходной балл: 330</BALL>
+		<PEOPLE>70</PEOPLE>
+		<CITY>Минск</CITY>
+	</SPECIALITY>
+	<SPECIALITY>
+		<UNIVER>БГУИР</UNIVER>
+		<BALL>Проходной балл: 350</BALL>
+		<PEOPLE>75</PEOPLE>
+		<CITY>Минск</CITY>
+	</SPECIALITY>
+	<SPECIALITY>
+		<UNIVER>БНТУ</UNIVER>
+		<BALL>Проходной балл: 335</BALL>
+		<PEOPLE>60</PEOPLE>
+		<CITY>Минск</CITY>
+	</SPECIALITY>
+</FACULTY>
