@@ -23,6 +23,7 @@
 }
 
 .chapter p {
+	transition: 1s;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-top: 2px;
@@ -32,6 +33,7 @@
 }
 
 .chapter p:hover {
+	transition: 0.3s;
 	background: none;
 	color: white;
 	font-weight: bold;

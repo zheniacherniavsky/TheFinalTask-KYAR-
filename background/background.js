@@ -6,7 +6,7 @@
 	particles = [],
 	properties = {
 		bgColor 		: 'rgba(17,17,19,1)',
-		particleColor	: 'yellow',
+		particleColor	: 'rgba(255,215,0,1)',
 		particleRadius	: 3,
 		particleCount	: 240,
 		particleMaxVelocity	: 0.2,
@@ -71,7 +71,7 @@
 				if(length < properties.lineLength) {
 					opacity = 1-length/properties.lineLength;
 					ctx.lineWidth = '0.5';
-					ctx.strokeStyle = 'rgba(255,255,0,'+opacity+')';
+					ctx.strokeStyle = 'rgba(255,215,0,'+opacity+')';
 					ctx.beginPath();
 					ctx.moveTo(x1,y1);
 					ctx.lineTo(x2,y2);
