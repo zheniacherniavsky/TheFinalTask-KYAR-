@@ -1,0 +1,51 @@
+#changeTheme {
+	transition: .4s;
+	width: 3vw;
+	position: fixed;
+	top: 3%;
+	left: 3%;
+	filter: invert(15%);
+}
+
+#changeTheme:hover {
+	transform: rotate(320deg);
+	cursor: pointer;
+	transition: .4s;
+	filter: invert(100%);
+}
+
+.theme-block {
+	transition: 0.4s;
+}
+
+.theme-background {
+	transition: 0.4s;
+}
+
+.light-theme-background {
+	background-color: #3A5795;
+	color: #333333;
+}
+
+.light-theme-block {
+	background-color: #EDF0F5;
+	color: #333333;
+}
+
+.dark-theme-background {
+	background-color: #333333;
+	color: #d4d0d6;
+}
+
+.dark-theme-block {
+	background-color: #4D4B4B;
+	color: #d4d0d6;
+}
+
+.light-theme-block img {
+	filter: brightness(1);
+}
+
+.dark-theme-block img {
+	filter: brightness(0.6);
+}
