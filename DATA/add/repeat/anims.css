@@ -1,0 +1,55 @@
+#anim {
+    width: 600px;
+    height: 400px;
+    margin-left: 250px;
+    margin-top: 40px;
+    border: 1px solid black;
+}
+#rect {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+#anim:hover #rect {
+    animation: changeColor 1s ease;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+    position: relative;
+    left: 400px;
+    top: 50px;
+}
+
+#anim:hover #circle {
+    animation: circleMove 1s ease-in-out infinite;
+}
+
+@keyframes changeColor {
+    from {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+    to {
+        background-color: red;
+    }
+}
+@keyframes circleMove {
+    from {
+        left: 400px;
+    }
+    50% {
+        left: 50px;
+    }
+    to {
+        left: 400px;
+    }
+}

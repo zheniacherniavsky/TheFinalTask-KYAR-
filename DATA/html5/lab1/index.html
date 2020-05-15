@@ -126,5 +126,12 @@
 		</div>
 		<hr noshade>
 	</div>
+	<script type="text/javascript">
+		navigator.geolocation.getCurrentPosition(showCoordinates);
+		function showCoordinates(position) {
+			alert("Широта: " + position.coords.latitude + "\n" + "Долгота: " + position.coords.longitude);
+		}
+		</script>
+	</script>
 </body>
 </html>

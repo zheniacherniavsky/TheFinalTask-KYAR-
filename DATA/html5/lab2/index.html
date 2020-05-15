@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CANVAS</title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<canvas id="gist" width="600" height="600"></canvas>
+	<canvas width="600" height="600" id="dio"></canvas> 
+	<script type="text/javascript">
+		let canvas = document.getElementById("gist");
+		let x = canvas.getContext("2d");
+		
+		x.beginPath()
+		x.moveTo(90, 30)
+		x.lineTo(90, 530)
+		x.moveTo(90, 530)
+		x.lineTo(530,530)
+		x.closePath()
+
+		var grad =x.createLinearGradient(340,300,340,600);
+		grad.addColorStop(0.0,'green');
+		grad.addColorStop(1.0,'white');
+
+		x.fillStyle = "rgb(255,255,0)"
+		let h1 = 300; x.fillRect(100,h1,50,530-h1)
+		x.fillStyle = "rgb(225,255,0)"
+		let h2 = 200; x.fillRect(160,h2,50,530-h2)
+		x.fillStyle = "rgb(195,255,0)"
+		let h3 = 240; x.fillRect(220,h3,50,530-h3)
+		x.fillStyle = "rgb(165,255,0)"
+		let h4 = 450; x.fillRect(280,h4,50,530-h4)
+		x.fillStyle = grad
+		let h5 = 300; x.fillRect(340,h5,50,530-h1)
+		var img = new Image();
+		img.src = 'https://img2.akspic.ru/image/113327-trava-drevesina-bambuk-stebel_rasteniya-zelenyj-2880x1800.jpg';
+		img.onload = function() {
+		  var pattern = x.createPattern(img, 'repeat');
+		  x.fillStyle = pattern;
+		  let h6 = 299; x.fillRect(400,h6,50,530-h1)
+		};
+		
+		x.font='15px Verdana';
+		x.fillStyle='#010101';
+		x.fillText("100", 40, 80);
+		x.fillText("80", 40, 170);
+		x.fillText("60", 40, 260);
+		x.fillText("40", 40, 350);
+		x.fillText("20", 40, 440);
+		x.fillText("00", 40, 530);
+		x.fillText("CSS", 110, 560);
+		x.fillText("JS", 180, 560);
+		x.fillText("XML", 230, 560);
+		x.fillText("HTML5", 280, 560);
+		x.fillText("GRAD", 345, 560);
+		x.fillText("PATTERN", 395, 560);
+
+		x.strokeStyle = "black"
+		x.stroke()
+
+		// DIO
+
+		canvas = document.getElementById('dio'); 
+	    y = canvas.getContext('2d'); 
+
+	    y.fillStyle = "green";
+		y.beginPath();
+		y.arc(250, 250, 125, -Math.PI/180*90, 1, false);
+		y.lineTo(250,250);
+		y.fill();
+
+		y.fillStyle = "red";
+		y.beginPath();
+		y.arc(250, 250, 125, Math.PI/180*100, 0, false);
+		y.lineTo(250,250);
+		y.fill();
+
+		y.fillStyle = "orange";
+		y.beginPath();
+		y.arc(250, 250, 125, Math.PI/180*190, 1, true);
+		y.lineTo(250,250);
+		y.fill();
+
+		y.fillStyle = "blue";
+		y.beginPath();
+		y.arc(250, 250, 125, Math.PI/180*90, 1, true);
+		y.lineTo(250,250);
+		y.fill();
+
+		y.font='15px Verdana';
+		y.fillStyle='green';
+		y.fillText("CSS", 130, 560);
+		y.fillStyle='red';
+		y.fillText("JS", 210, 560);
+		y.fillStyle='orange';
+		y.fillText("XML", 260, 560);
+		y.fillStyle='blue';
+		y.fillText("HTML5", 310, 560);
+
+		y.strokeStyle = "black"
+		y.stroke()
+
+	</script>
+</body>
+</html>

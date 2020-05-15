@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>3 lab</title>
+	<style type="text/css">
+		body {
+			font-family: Consolas;
+			font-weight: bold;
+			margin:0;
+			padding:0;
+			color: black;
+		}
+		nav {
+			padding-left: 5vw;
+			padding-top: 10px;
+			height: 15vh;
+			background: lightgrey;
+		}
+		nav figcaption {
+			position: fixed;
+			opacity: .5;
+		}
+
+		form {
+			transform: scale(2);
+			padding-left: 5vw;
+			padding-top: 10px;
+			width: 20vw;
+			margin-top: 12vh;
+			margin-left: 30vw;
+		}
+
+		form input {
+			width: 300px;
+			height: 30px;
+			margin-top: 10px;
+			display: block;
+		}
+
+		nav p {
+			float: right;
+			margin-right: 50vw;
+			font-size: 2vw;
+		}
+
+		footer {
+			overflow: auto;
+			position: absolute;
+			width: 100vw;
+			height: 25vh;
+			background: lightgrey;
+			bottom: 0;
+		}
+		footer p {
+			margin-left: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function output(fullname, course, group, phone, email) {
+			nameOutput.value=fullname.value;
+			courseOutput.value=course.value;
+			groupOutput.value=group.value;
+			numberOutput.value=phone.value;
+			mailOutput.value=email.value;
+		}
+	</script>
+</head>
+<body>
+	<nav>
+		<img src="https://yt3.ggpht.com/a/AGF-l7-al6d0b1WiEbQPcF3Tv84DTx3lwhVEF2ZtPw=s900-c-k-c0xffffffff-no-rj-mo" width="125vh">
+		<figcaption>Нет фото</figcaption>
+		<p>NAV IS HERE</p>
+	</nav>
+
+	<form oninput="output(fullname, course, group, phone, email)">
+		<input name="fullname" type="name" placeholder="ФИО" autofocus>
+		<input name="course" list="курс" placeholder="Выберите курс">
+		<datalist id="курс">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</datalist>
+		<input name="group" list="группа" placeholder="Выберите свою группу">
+		<datalist id="группа">
+			<option>1 ИСиТ</option>
+			<option>2 ИСиТ</option>
+			<option>3 ПОиТ</option>
+			<option>4 ПОиТ</option>
+		</datalist>
+		<input name="phone" type="phone" placeholder="Номер телефона">
+		<input name="email" type="email" placeholder="Почта">
+	</form>
+
+	<footer>
+		<p>ФИО: <output id="nameOutput"></output></p>
+		<p>КУРС: <output id="courseOutput"></output></p>
+		<p>ГРУППА: <output id="groupOutput"></output></p>
+		<p>НОМЕР ТЕЛЕФОНА: <output id="numberOutput"></output></p>
+		<p>ПОЧТА: <output id="mailOutput"></output></p>
+	</footer>
+</body>
+</html>
